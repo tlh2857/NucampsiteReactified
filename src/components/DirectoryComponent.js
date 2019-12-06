@@ -3,15 +3,9 @@ import { Card, CardImg, CardImgOverlay, CardText, CardBody, CardTitle } from 're
 class Directory extends Component{
     constructor(props){
         super(props);
-        this.state={
-            selectedCampsite:null,
-        };
+        
     }
-    onCampsiteSelect(campsite){
-        this.setState({
-            selectedCampsite:campsite,
-        });
-    }
+    
 
     renderSelectedCampsite(campsite){
         if(campsite){
@@ -49,7 +43,7 @@ class Directory extends Component{
                 </div>
                 <div className="row">
                     <div className="col-md-5 m-1">
-                        {this.renderSelectedCampsite(this.state.selectedCampsite)}
+                        {this.renderSelectedCampsite(this.props.selectedCampsite)}
                     </div>
                 </div>
             </div>
