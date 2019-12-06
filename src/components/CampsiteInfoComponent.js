@@ -38,3 +38,4 @@ class CampsiteInfo extends React.Component {
     }
 }
 export default CampsiteInfo;
+
